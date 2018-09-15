@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36F474C3C3FCCC8F3CEDB47 /* libPods-KotlinDomain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8BA43040B712DC90841CD8 /* libPods-KotlinDomain.a */; };
 		FB3D5F70214CFCE900AD3AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F6F214CFCE900AD3AF3 /* AppDelegate.swift */; };
 		FB3D5F72214CFCE900AD3AF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F71214CFCE900AD3AF3 /* ViewController.swift */; };
 		FB3D5F75214CFCE900AD3AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D5F73214CFCE900AD3AF3 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		FB3D5F7A214CFCEA00AD3AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D5F78214CFCEA00AD3AF3 /* LaunchScreen.storyboard */; };
 		FB3D5F85214CFCEA00AD3AF3 /* KotlinDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F84214CFCEA00AD3AF3 /* KotlinDomainTests.swift */; };
 		FB3D5F90214CFCEA00AD3AF3 /* KotlinDomainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F8F214CFCEA00AD3AF3 /* KotlinDomainUITests.swift */; };
+		FB3D5F9F214CFD7900AD3AF3 /* ListProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F9E214CFD7900AD3AF3 /* ListProtocol .swift */; };
+		FB3D5FA4214CFE2C00AD3AF3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5FA3214CFE2C00AD3AF3 /* PostModel.swift */; };
+		FB3D5FA6214D040B00AD3AF3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5FA5214D040B00AD3AF3 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		647DAB87E8BAB053664B6990 /* Pods-KotlinDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KotlinDomain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KotlinDomain/Pods-KotlinDomain.debug.xcconfig"; sourceTree = "<group>"; };
+		9C8BA43040B712DC90841CD8 /* libPods-KotlinDomain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KotlinDomain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECD2FE1BBDCD8FE497C036D /* Pods-KotlinDomain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KotlinDomain.release.xcconfig"; path = "Pods/Target Support Files/Pods-KotlinDomain/Pods-KotlinDomain.release.xcconfig"; sourceTree = "<group>"; };
 		FB3D5F6C214CFCE900AD3AF3 /* KotlinDomain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotlinDomain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3D5F6F214CFCE900AD3AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3D5F71214CFCE900AD3AF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		FB3D5F8B214CFCEA00AD3AF3 /* KotlinDomainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinDomainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3D5F8F214CFCEA00AD3AF3 /* KotlinDomainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinDomainUITests.swift; sourceTree = "<group>"; };
 		FB3D5F91214CFCEA00AD3AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3D5F9E214CFD7900AD3AF3 /* ListProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListProtocol .swift"; sourceTree = "<group>"; };
+		FB3D5FA3214CFE2C00AD3AF3 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FB3D5FA5214D040B00AD3AF3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36F474C3C3FCCC8F3CEDB47 /* libPods-KotlinDomain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CA3E619D1FCA28D9B8E41A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				647DAB87E8BAB053664B6990 /* Pods-KotlinDomain.debug.xcconfig */,
+				EECD2FE1BBDCD8FE497C036D /* Pods-KotlinDomain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFDB87547EEC08365F74C3A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C8BA43040B712DC90841CD8 /* libPods-KotlinDomain.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB3D5F63214CFCE900AD3AF3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				FB3D5F83214CFCEA00AD3AF3 /* KotlinDomainTests */,
 				FB3D5F8E214CFCEA00AD3AF3 /* KotlinDomainUITests */,
 				FB3D5F6D214CFCE900AD3AF3 /* Products */,
+				1CA3E619D1FCA28D9B8E41A5 /* Pods */,
+				DFDB87547EEC08365F74C3A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +127,8 @@
 		FB3D5F6E214CFCE900AD3AF3 /* KotlinDomain */ = {
 			isa = PBXGroup;
 			children = (
+				FB3D5FA2214CFE2200AD3AF3 /* entities */,
+				FB3D5F9D214CFCF100AD3AF3 /* list */,
 				FB3D5F6F214CFCE900AD3AF3 /* AppDelegate.swift */,
 				FB3D5F71214CFCE900AD3AF3 /* ViewController.swift */,
 				FB3D5F73214CFCE900AD3AF3 /* Main.storyboard */,
@@ -125,6 +157,23 @@
 			path = KotlinDomainUITests;
 			sourceTree = "<group>";
 		};
+		FB3D5F9D214CFCF100AD3AF3 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D5F9E214CFD7900AD3AF3 /* ListProtocol .swift */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		FB3D5FA2214CFE2200AD3AF3 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D5FA3214CFE2C00AD3AF3 /* PostModel.swift */,
+				FB3D5FA5214D040B00AD3AF3 /* Post.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB3D5F94214CFCEA00AD3AF3 /* Build configuration list for PBXNativeTarget "KotlinDomain" */;
 			buildPhases = (
+				0D3034D4BAD4C451799D79DC /* [CP] Check Pods Manifest.lock */,
 				FB3D5F68214CFCE900AD3AF3 /* Sources */,
 				FB3D5F69214CFCE900AD3AF3 /* Frameworks */,
 				FB3D5F6A214CFCE900AD3AF3 /* Resources */,
@@ -251,13 +301,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D3034D4BAD4C451799D79DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KotlinDomain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB3D5F68214CFCE900AD3AF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB3D5F72214CFCE900AD3AF3 /* ViewController.swift in Sources */,
+				FB3D5FA4214CFE2C00AD3AF3 /* PostModel.swift in Sources */,
+				FB3D5F9F214CFD7900AD3AF3 /* ListProtocol .swift in Sources */,
 				FB3D5F70214CFCE900AD3AF3 /* AppDelegate.swift in Sources */,
+				FB3D5FA6214D040B00AD3AF3 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +502,7 @@
 		};
 		FB3D5F95214CFCEA00AD3AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647DAB87E8BAB053664B6990 /* Pods-KotlinDomain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +520,7 @@
 		};
 		FB3D5F96214CFCEA00AD3AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECD2FE1BBDCD8FE497C036D /* Pods-KotlinDomain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
