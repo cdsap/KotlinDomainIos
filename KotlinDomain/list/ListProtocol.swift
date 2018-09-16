@@ -16,7 +16,6 @@ protocol PostListInteractorOutputProtocol: class {
     func onError()
 }
 
-
 protocol PostListRemoteDataManagerInputProtocol: class {
     var remoteRequestHandler: PostListRemoteDataManagerOutputProtocol? { get set }
     

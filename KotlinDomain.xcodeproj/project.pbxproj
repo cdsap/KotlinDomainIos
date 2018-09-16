@@ -15,9 +15,12 @@
 		FB3D5F7A214CFCEA00AD3AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D5F78214CFCEA00AD3AF3 /* LaunchScreen.storyboard */; };
 		FB3D5F85214CFCEA00AD3AF3 /* KotlinDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F84214CFCEA00AD3AF3 /* KotlinDomainTests.swift */; };
 		FB3D5F90214CFCEA00AD3AF3 /* KotlinDomainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F8F214CFCEA00AD3AF3 /* KotlinDomainUITests.swift */; };
-		FB3D5F9F214CFD7900AD3AF3 /* ListProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F9E214CFD7900AD3AF3 /* ListProtocol .swift */; };
+		FB3D5F9F214CFD7900AD3AF3 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5F9E214CFD7900AD3AF3 /* ListProtocol.swift */; };
 		FB3D5FA4214CFE2C00AD3AF3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5FA3214CFE2C00AD3AF3 /* PostModel.swift */; };
 		FB3D5FA6214D040B00AD3AF3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D5FA5214D040B00AD3AF3 /* Post.swift */; };
+		FB441A57214E72EA00617160 /* PostListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB441A56214E72EA00617160 /* PostListViewProtocol.swift */; };
+		FBCAAA68214E619200883E84 /* ListPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAAA67214E619200883E84 /* ListPost.swift */; };
+		FBCAAA6A214E6F2A00883E84 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAAA69214E6F2A00883E84 /* PostListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +57,12 @@
 		FB3D5F8B214CFCEA00AD3AF3 /* KotlinDomainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinDomainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3D5F8F214CFCEA00AD3AF3 /* KotlinDomainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinDomainUITests.swift; sourceTree = "<group>"; };
 		FB3D5F91214CFCEA00AD3AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB3D5F9E214CFD7900AD3AF3 /* ListProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListProtocol .swift"; sourceTree = "<group>"; };
+		FB3D5F9E214CFD7900AD3AF3 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
 		FB3D5FA3214CFE2C00AD3AF3 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		FB3D5FA5214D040B00AD3AF3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FB441A56214E72EA00617160 /* PostListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewProtocol.swift; sourceTree = "<group>"; };
+		FBCAAA67214E619200883E84 /* ListPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPost.swift; sourceTree = "<group>"; };
+		FBCAAA69214E6F2A00883E84 /* PostListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +166,10 @@
 		FB3D5F9D214CFCF100AD3AF3 /* list */ = {
 			isa = PBXGroup;
 			children = (
-				FB3D5F9E214CFD7900AD3AF3 /* ListProtocol .swift */,
+				FB3D5F9E214CFD7900AD3AF3 /* ListProtocol.swift */,
+				FBCAAA67214E619200883E84 /* ListPost.swift */,
+				FBCAAA69214E6F2A00883E84 /* PostListPresenter.swift */,
+				FB441A56214E72EA00617160 /* PostListViewProtocol.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 				FB3D5F68214CFCE900AD3AF3 /* Sources */,
 				FB3D5F69214CFCE900AD3AF3 /* Frameworks */,
 				FB3D5F6A214CFCE900AD3AF3 /* Resources */,
+				7BC3B207FDF8915AA646C1FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +330,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7BC3B207FDF8915AA646C1FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KotlinDomain/Pods-KotlinDomain-resources.sh",
+				"${PODS_ROOT}/PKHUD/PKHUD/Images.xcassets",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KotlinDomain/Pods-KotlinDomain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -327,9 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCAAA6A214E6F2A00883E84 /* PostListPresenter.swift in Sources */,
 				FB3D5F72214CFCE900AD3AF3 /* ViewController.swift in Sources */,
+				FBCAAA68214E619200883E84 /* ListPost.swift in Sources */,
 				FB3D5FA4214CFE2C00AD3AF3 /* PostModel.swift in Sources */,
-				FB3D5F9F214CFD7900AD3AF3 /* ListProtocol .swift in Sources */,
+				FB441A57214E72EA00617160 /* PostListViewProtocol.swift in Sources */,
+				FB3D5F9F214CFD7900AD3AF3 /* ListProtocol.swift in Sources */,
 				FB3D5F70214CFCE900AD3AF3 /* AppDelegate.swift in Sources */,
 				FB3D5FA6214D040B00AD3AF3 /* Post.swift in Sources */,
 			);
